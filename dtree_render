@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Humidity3pm <= 71.5\ngini = 0.348\nsamples = 113754\nvalue = [88249, 25505]\nclass = 0", fillcolor="#eda572"] ;
+1 [label="Rainfall <= 0.55\ngini = 0.25\nsamples = 94949\nvalue = [81051, 13898]\nclass = 0", fillcolor="#e9975b"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Sunshine <= 7.35\ngini = 0.19\nsamples = 74416\nvalue = [66524, 7892]\nclass = 0", fillcolor="#e89050"] ;
+1 -> 2 ;
+3 [label="gini = 0.364\nsamples = 10584\nvalue = [8053, 2531]\nclass = 0", fillcolor="#eda977"] ;
+2 -> 3 ;
+4 [label="gini = 0.154\nsamples = 63832\nvalue = [58471, 5361]\nclass = 0", fillcolor="#e78d4b"] ;
+2 -> 4 ;
+5 [label="Humidity3pm <= 51.241\ngini = 0.414\nsamples = 20533\nvalue = [14527, 6006]\nclass = 0", fillcolor="#f0b58b"] ;
+1 -> 5 ;
+6 [label="gini = 0.27\nsamples = 6872\nvalue = [5766, 1106]\nclass = 0", fillcolor="#ea995f"] ;
+5 -> 6 ;
+7 [label="gini = 0.46\nsamples = 13661\nvalue = [8761, 4900]\nclass = 0", fillcolor="#f4c7a8"] ;
+5 -> 7 ;
+8 [label="Humidity3pm <= 83.5\ngini = 0.473\nsamples = 18805\nvalue = [7198, 11607]\nclass = 1", fillcolor="#b4daf5"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="WindGustSpeed <= 45.0\ngini = 0.499\nsamples = 10957\nvalue = [5711, 5246]\nclass = 0", fillcolor="#fdf5ef"] ;
+8 -> 9 ;
+10 [label="gini = 0.48\nsamples = 7536\nvalue = [4523, 3013]\nclass = 0", fillcolor="#f6d5bd"] ;
+9 -> 10 ;
+11 [label="gini = 0.453\nsamples = 3421\nvalue = [1188, 2233]\nclass = 1", fillcolor="#a2d1f3"] ;
+9 -> 11 ;
+12 [label="MinTemp <= 4.65\ngini = 0.307\nsamples = 7848\nvalue = [1487, 6361]\nclass = 1", fillcolor="#67b4eb"] ;
+8 -> 12 ;
+13 [label="gini = 0.486\nsamples = 1025\nvalue = [428, 597]\nclass = 1", fillcolor="#c7e3f8"] ;
+12 -> 13 ;
+14 [label="gini = 0.262\nsamples = 6823\nvalue = [1059, 5764]\nclass = 1", fillcolor="#5dafea"] ;
+12 -> 14 ;
+}
